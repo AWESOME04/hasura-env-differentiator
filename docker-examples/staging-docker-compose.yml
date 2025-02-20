@@ -1,1 +1,24 @@
-"" 
+version: '3.6'
+services:
+  hasura-env-differentiator-staging:
+    container_name: hasura-differentiator-staging
+    image: nginx:alpine
+    volumes:
+      - ../environments/staging/staging.css:/usr/share/nginx/html/staging.css:ro
+    environment:
+      - HASURA_GRAPHQL_ADMIN_SECRET=${HASURA_ADMIN_SECRET}
+    ports:
+      - "8082:80"
+    labels:
+      - "environment=staging"
+    networks:
+      - hasura-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+networks:
+  hasura-network:
+    name: hasura-staging 

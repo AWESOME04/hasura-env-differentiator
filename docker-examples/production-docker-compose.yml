@@ -1,1 +1,19 @@
-"" 
+version: '3.6'
+services:
+  hasura-env-differentiator-production:
+    container_name: hasura-differentiator-production
+    image: nginx:alpine
+    volumes:
+      - ../environments/production/production.css:/usr/share/nginx/html/production.css:ro
+    environment:
+      - HASURA_GRAPHQL_ADMIN_SECRET=${HASURA_ADMIN_SECRET}
+    ports:
+      - "8083:80"
+    labels:
+      - "environment=production"
+    networks:
+      - hasura-network
+
+networks:
+  hasura-network:
+    name: hasura-production 
