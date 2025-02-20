@@ -1,1 +1,16 @@
 /* Production CSS */
+
+/* Production Environment Styles */
+body::before {
+    content: "PRODUCTION ENVIRONMENT";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    z-index: 9999;
+    font-weight: bold;
+}

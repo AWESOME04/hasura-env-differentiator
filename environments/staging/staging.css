@@ -1,1 +1,16 @@
 /* Staging CSS */
+
+/* Staging Environment Styles */
+body::before {
+    content: "STAGING ENVIRONMENT";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    z-index: 9999;
+    font-weight: bold;
+}
