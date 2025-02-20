@@ -1,0 +1,18 @@
+{
+  "environments": {
+    "8080": {
+      "name": "STAGING",
+      "color": "#4CAF50",
+      "dbPort": "5432",
+      "allowedOperations": ["read", "write", "delete"],
+      "warningLevel": "low"
+    },
+    "8081": {
+      "name": "PRODUCTION",
+      "color": "#ff4d4d",
+      "dbPort": "5433",
+      "allowedOperations": ["read"],
+      "warningLevel": "high"
+    }
+  }
+} 
