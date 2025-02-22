@@ -31,3 +31,7 @@ This project implements:
 - [Setup Guide](docs/SETUP.md)
 - [Environment Configuration](docs/SETUP.md#environment-configuration)
 - [Extension Installation](docs/SETUP.md#chrome-extension)
+
+## Key Updates
+- Added a user interface for inputting production and staging URLs in the Chrome extension.
+- Improved user experience with success messages and automatic popup closure after saving settings.
