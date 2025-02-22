@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .input-group {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .logo {
+      max-width: 200px;
+      margin-bottom: 15px;
+    }
+    .save-btn {
+      background: #FD7014;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <img src="rapidgoat-logo.jpeg" alt="RapidGoat" class="logo" style="width: 50px; height: 50px;">
+  <div class="input-group">
+    <label>Production URL:</label>
+    <input type="text" id="productionUrl" placeholder="https://production.hasura.app">
+  </div>
+  <div class="input-group">
+    <label>Staging URL:</label>
+    <input type="text" id="stagingUrl" placeholder="https://staging.hasura.app">
+  </div>
+  <button class="save-btn" id="saveBtn">Save Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html> 
