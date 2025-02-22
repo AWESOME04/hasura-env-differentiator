@@ -36,6 +36,7 @@ HASURA_GRAPHQL_ADMIN_SECRET=your_production_admin_secret
 2. Enable "Developer mode"
 3. Click "Load unpacked"
 4. Select the `hasura-extension` directory
+5. Enter the production and staging URLs in the popup that appears when you click the extension icon.
 
 ### 4. Start the Environments
 
